@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :customers
+  resources :cart_items
+  resources :carts
+  devise_for :customers, controllers: {:omniauth_callbacks => "callbacks"}
   resources :pizza_oders
   resources :orders
   resources :delivery_infos

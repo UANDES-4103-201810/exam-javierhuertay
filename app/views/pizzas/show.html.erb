@@ -14,10 +14,3 @@
 <%= link_to 'Back', pizzas_path %>
 
 
-<h2><%= recipe.name %></h2>
-<dl>
-  <% @recipe.ingredients.each do |ingredient| %>
-    <dt><%= ingredient.item.name %></dt>
-    <dd><%= ingredient.quantity %></dd>
-  <% end %>
-</dl>

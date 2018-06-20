@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180620213940) do
+ActiveRecord::Schema.define(version: 20180620224706) do
+
+  create_table "cart_items", force: :cascade do |t|
+    t.string "pizza_id"
+    t.string "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "carts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "crusts", force: :cascade do |t|
     t.string "tipo"
