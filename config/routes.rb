@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :customers
   resources :pizza_oders
   resources :orders
   resources :delivery_infos
@@ -8,6 +9,6 @@ Rails.application.routes.draw do
   resources :recipes
   resources :crusts
   resources :ingredients
-  root 'application#index'
+  root 'pizzas#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

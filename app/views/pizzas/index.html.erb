@@ -24,9 +24,8 @@
 
 <div class="flex-container">
     <% @pizzas.each do |pizza| %>
-      <tr>
         <div><%= pizza.name %></div>
-      </tr>
+        <%= link_to 'Show', pizza %>
     <% end %>
 </div>
 
