@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @pizza_oder.order_id %>
+</p>
+
+<p>
+  <strong>Pizza:</strong>
+  <%= @pizza_oder.pizza_id %>
+</p>
+
+<%= link_to 'Edit', edit_pizza_oder_path(@pizza_oder) %> |
+<%= link_to 'Back', pizza_oders_path %>
